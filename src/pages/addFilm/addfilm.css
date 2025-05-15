@@ -1,0 +1,73 @@
+.addFilms_container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.addfilm_wrapper {
+   width: 100%;
+  max-width: 87rem;
+
+}
+
+
+
+.addFilm_form {
+  display: flex;
+  flex-direction:column ;
+  gap: 2rem;
+  
+
+     input {
+          width: 100%;
+          max-width: 87rem;
+          height: 4rem;
+          padding:1.5rem ;
+          border-radius: 1rem;
+          border: none;
+     }
+
+
+
+     input:focus {
+          outline: none;
+          border: 2px solid #acb;
+          box-shadow: #abb 0px 0px 20px;
+          color: navy;
+     }
+
+     .addFilm_btn {
+          padding: 1rem ;
+          width: 100%;
+          max-width: 12rem;
+          margin-left: auto;
+          border-radius: 1.2rem;
+          background-color: navy;
+          color:#fff;
+          font-weight: bold;
+          border:2px solid #ffff;
+     }
+
+     .addFilm_btn:hover {
+          box-shadow: #abb 0px 0px 20px;
+     }
+
+     .addFilm_btn:active {
+          border-color: navy;
+          background-color:#fff;
+          color:navy;
+     }
+}
+
+.addFilms_title {
+     color: #fff;
+     margin-bottom: 2.4rem;
+     font-size: 3rem;
+}
+
+
+@media screen and (max-width:400px) {
+     .addFilms_title{
+          font-size: 2rem;
+     }
+}

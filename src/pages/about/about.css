@@ -1,22 +1,104 @@
 .about_container {
      display: flex;
-     padding: 20px;
+     padding: 40px 20px;
      justify-content: center;
      align-items: center;
      height: 100%;
      width: 100%;
-     background-image: url(../../images/photo_2022-09-27_12-11-54-1110x630.jpg);
+     flex-direction: column;
+     gap: 4rem;
+     
      background-repeat: no-repeat;
      background-size: cover;
 
-     h2 {
+    
+}
+ .about_title {
+
           padding: 3rem;
-          background-color: #0484C5;
+          background-color: #202020;
           border-radius: 1.4rem;
-          border: 0.4rem solid #fff;
+          /* border: 0.4rem solid #fff;  */
           font-size: 2rem;
           color: #fff;
           width: 100%;
           max-width: 700px;
      }
+
+     .about_title:hover {
+          box-shadow: #abb 0px 0px 20px;
+
+     }
+.social_links_container {
+    
+   
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+
+     Link:nth-child(1) {
+          color:#2BA3DE;
+     }
+
+     Link:nth-child(2) {
+          background: linear-gradient(45deg, rgb(131, 58, 180), rgb(253, 29, 29), rgb(252, 176, 69));
+
+          color: #fff;
+     }
+
+     Link:nth-child(4) {
+          color: #0866FF;
+     }
+
+     Link:nth-child(3) {
+          color: #0A66C2;
+     }
 }
+
+@media screen and (max-width:575px) {
+     .social_links_container {
+          flex-direction: column;
+          gap: 2rem;
+
+          .social_links {
+               width: 100%;
+               max-width: 60rem;
+          }
+     }
+
+     .about_title {
+          font-size: 1.4rem;
+          padding: 1rem;
+     }
+}
+
+.social_links {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     max-width: 12rem;
+     height: 5rem;
+     border-radius: 1.4rem;
+     /* border: 0.1rem solid #fff; */
+     border: none;
+     font-weight:900;
+     font-family: "Poppins",sans-serif;
+     font-size: 1.8rem;
+     color:blue;
+     background-color:#383B43;
+     letter-spacing: 0.1rem;
+}
+
+.social_links:hover {
+  box-shadow: #abb 0px 0px 20px;
+  color: white;
+  
+}
+
+@media screen and (max-width:365px) {
+     .about_title {
+          font-size: 1.2rem;
+     }
+}
+

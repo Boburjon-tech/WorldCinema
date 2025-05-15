@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="navbar_main_div">
      <div className="site_logo_first_div">
-     <div className="site_logo_div"><img src="../../src/images/worldCinemaLogo.png" alt="World Cinema Logo" width="150px" height="150px"/></div>
+     <button className="site_logo_div"><img src="../../src/images/worldCinemaLogo.png" alt="World Cinema Logo" width="150px" height="150px"/></button>
      </div>
         
         <nav className="navibar">

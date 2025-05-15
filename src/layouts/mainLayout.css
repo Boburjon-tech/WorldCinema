@@ -2,13 +2,15 @@
     display: grid;
     grid-template-columns: minmax(0, 250px) 1fr;
     min-height: 100vh;
-    /* overflow: auto; */
+    
+
 }
 
 .main__content{
     overflow-y: auto;
     height: 100vh;
     background-color: #282B30;
+    padding: 2.4rem;
 }
 
 .darkmode__btn_div {
@@ -36,5 +38,12 @@
 @media screen and (max-width:860px) {
     .site_main_div {
         display: flex;
+        
+        
+
+    }
+
+    .main__content {
+        width: 100%;
     }
 }

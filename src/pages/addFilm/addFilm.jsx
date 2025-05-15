@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { db } from "../../firebase/config";
 import { collection, addDoc } from "firebase/firestore";
+import "./addFilm.css"
 
 function AddFilm() {
   const [title, setTitle] = useState("");
@@ -33,9 +34,10 @@ function AddFilm() {
   };
 
   return (
-    <div style={{ padding: "2rem", color: "white" }}>
-      <h2>Yangi film qo'shish</h2>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: "400px" }}>
+    <div className="addFilms_container">
+      <div className="addfilm_wrapper">
+      <h2 className="addFilms_title">Yangi film qo'shish</h2>
+      <form className="addFilm_form" onSubmit={handleSubmit} >
         <input type="text" placeholder="Sarlavha" value={title} onChange={(e) => setTitle(e.target.value)} required />
         <input type="text" placeholder="Janr" value={genre} onChange={(e) => setGenre(e.target.value)} required />
         <input type="text" placeholder="Davomiyligi (minut)" value={runtime} onChange={(e) => setRuntime(e.target.value)} required />
@@ -44,8 +46,9 @@ function AddFilm() {
         <input type="text" placeholder="Aktyorlar" value={actors} onChange={(e) => setActors(e.target.value)} />
         <input type="text" placeholder="Filmning linki" value={filmUrl} onChange={(e) => setFilmUrl(e.target.value)} />
 
-        <button type="submit">Qo'shish</button>
+        <button className="addFilm_btn" type="submit">Qo'shish</button>
       </form>
+      </div>
     </div>
   );
 }
