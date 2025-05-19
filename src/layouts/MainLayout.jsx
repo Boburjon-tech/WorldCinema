@@ -6,9 +6,10 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 import { useState } from 'react';
+import { useDarkMode } from "../context/darkModeContext"; 
 
 function MainLayout() {
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, setDarkMode } = useDarkMode();
 
   return (
     <div className={`site_main_div ${darkMode ? "dark" : ""}`}>
