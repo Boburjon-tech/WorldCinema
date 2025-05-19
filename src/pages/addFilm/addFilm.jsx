@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { db } from "../../firebase/config";
 import { collection, addDoc } from "firebase/firestore";
-import "./addFilm.css"
+import "./addfilm.css"
 
 function AddFilm() {
   const [title, setTitle] = useState("");
