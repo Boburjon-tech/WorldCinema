@@ -1,5 +1,5 @@
 import { useCollectionsData } from "../../hooks/useCollectionsData";
-import "./Films.css";
+import "./films.css";
 export default function Films() {
   const { data, isPending, error } = useCollectionsData();
 
